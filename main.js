@@ -125,7 +125,9 @@ class ProgressBar extends MarkdownRenderChild {
                 this.total = parseInt(value, 10);
             } else if (key === 'color') {
                 this.color = value;
-            } else if (key.toLowerCase() === 'background') {  // Handles capital B
+            } else if (key.toLowerCase() === 'BackgroundColor') {
+                this.backgroundColor = value;
+            } else if (key.toLowerCase() === 'background') {
                 this.backgroundColor = value;
             } else if (key === 'increment') {
                 this.increment = parseInt(value, 10);
